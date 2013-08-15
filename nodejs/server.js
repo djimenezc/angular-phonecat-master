@@ -31,7 +31,8 @@ function start(route,handle) {
     route(handle, pathname);
 
     response.writeHead(200, {"Content-Type": "text/plain"});
-    response.write("Hello World");
+    var content = route(handle, pathname);
+    response.write(content);
     response.end();
   }
 
