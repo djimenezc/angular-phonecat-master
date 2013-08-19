@@ -2,3 +2,4 @@ logs/*
 !.gitkeep
 /.settings
 /.project
+/node_modules
